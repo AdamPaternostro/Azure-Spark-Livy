@@ -1,5 +1,5 @@
 # Azure-Spark-Livy
-Run a job in Spark 2.x with HDInsight and submit the job through Livy
+Run a job in Spark 2.x with HDInsight and submit the job through Livy.  The full code is in the zip and the scala files are above for easy reference.
 
 ## Steps to run this script:
 1 - Create a Azure Data Lake Storage account
