@@ -3,10 +3,10 @@ Run a job in Spark 2.x with HDInsight and submit the job through Livy
 
 ## Steps to run this script:
 1 - Create a Azure Data Lake Storage account
-    - Create a root folder called "livy"
-    - Create a folder under livy called "code" and upload the SparkApp.jar inside of the folder
-    - Create a folder under livy called "input" and upload the HVAC.csv inside of the folder
-    - Create a folder under livy called "output"
+- Create a root folder called "livy"
+- Create a folder under livy called "code" and upload the SparkApp.jar inside of the folder
+- Create a folder under livy called "input" and upload the HVAC.csv inside of the folder
+- Create a folder under livy called "output"
 
 2 - Create a Spark cluster (Spark 2.x) that uses Data Lake as its main storage and when you create the Service Principle grant acess to the /clusters directory and the /livy directory
 
@@ -14,6 +14,7 @@ Run a job in Spark 2.x with HDInsight and submit the job through Livy
 
 ## ADLS Job
 Read data to/from Azure Data Lake Storage
+
     1 - Type "nano SparkApp1.txt" (or use VI or whatever) and place the below in the file.  Change the << >> items.
     { "args":
     [
@@ -34,6 +35,7 @@ Read data to/from Azure Data Lake Storage
 
 ## SQL Job
 Run a Spark SQL Statement using the Hive metastore
+
     1 - Type "nano SparkApp2.txt" (or use VI or whatever) and place the below in the file.  Change the << >> items.
     { "args":
     [
