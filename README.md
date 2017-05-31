@@ -57,13 +57,9 @@ Run a Spark SQL Statement using the Hive metastore
     curl -k --user "admin:<<YOUR-HDI-PASSWORD>>" -v -X DELETE "<<YOUR-HDI-CLUSTERNAME>>.azurehdinsight.net/livy/batches/0"
 
 ## Notes
-- Depending on your Spark version the value "file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse" might change.  To get the latest value you can SSH into your HDInsight cluster.
-
-    ssh sshuser@<<MY CLUSTER>>-ssh.azurehdinsight.net
-    cd $SPARK_HOME/bin
-    spark-shell
-    sc.getConf.getAll.foreach(println)
-    look for: (hive.metastore.warehouse.dir,file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse).  This might change to "spark.sql.warehouse.dir" in the future.
-
-
-
+- Depending on your Spark version the value "file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse" might change.  To get the latest value you can SSH into your HDInsight cluster.   
+    - ssh sshuser@<<MY CLUSTER>>-ssh.azurehdinsight.net
+    - cd $SPARK_HOME/bin
+    - spark-shell
+    - sc.getConf.getAll.foreach(println)
+    - look for: (hive.metastore.warehouse.dir,file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse).  This might change to "spark.sql.warehouse.dir" in the future.
