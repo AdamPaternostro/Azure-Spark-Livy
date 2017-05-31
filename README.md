@@ -47,7 +47,7 @@ Run a Spark SQL Statement using the Hive metastore
     "className":"com.adampaternostro.spark.example.SqlTest" }
 
 
-    2 - Run the job via Livy.  You need to delete your output folder if it exists (e.g. /livy/output/ADLSIOTest)
+    2 - Run the job via Livy.  You need to delete your output folder if it exists (e.g. /livy/output/SqlTestOut)
     curl -k --user "admin:<<YOUR-HDI-PASSWORD>>" -v -H "Content-Type: application/json" -X POST --data @SparkApp2.txt "<<YOUR-HDI-CLUSTERNAME>>.azurehdinsight.net/livy/batches"
 
     3 - Get the status.  The prior command will return a "id": ? (replace the 0 below with the ?)  You can run this over and over to see the jobs status.
