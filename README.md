@@ -58,7 +58,7 @@ Run a Spark SQL Statement using the Hive metastore
 
 ## Notes
 - Depending on your Spark version the value "file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse" might change.  To get the latest value you can SSH into your HDInsight cluster.   
-    - ssh sshuser@<<MY CLUSTER>>-ssh.azurehdinsight.net
+    - ssh sshuser@MY-CLUSTER-ssh.azurehdinsight.net
     - cd $SPARK_HOME/bin
     - spark-shell
     - sc.getConf.getAll.foreach(println)
