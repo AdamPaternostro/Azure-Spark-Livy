@@ -65,3 +65,5 @@ Run a Spark SQL Statement using the Hive metastore
     sc.getConf.getAll.foreach(println)
     look for: (hive.metastore.warehouse.dir,file:/usr/hdp/2.6.0.2-76/spark2/bin/spark-warehouse).  This might change to "spark.sql.warehouse.dir" in the future.
 
+
+
