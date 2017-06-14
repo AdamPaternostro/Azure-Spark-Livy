@@ -20,5 +20,7 @@ object SqlTest {
 
     // adl://sampleazuredatalakestore.azuredatalakestore.net/livy/output/SqlTestOut
     sql.rdd.saveAsTextFile(arg(2))
+
+    spark.stop()
   }
 }
